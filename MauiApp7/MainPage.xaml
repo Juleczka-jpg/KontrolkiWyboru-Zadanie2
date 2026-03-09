@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="MauiApp7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="Wybierz specjalizację:" FontAttributes="Bold"/>
+            <Picker x:Name="SpecializationPicker"
+                Title="Specjalizacja"
+                ItemsSource="{Binding Specializations}" />
+
+            <Label Text="Wybierz datę:" FontAttributes="Bold"/>
+            <DatePicker x:Name="VisitDatePicker"
+                    MinimumDate="{Binding MinDate}"
+                    MaximumDate="{Binding MaxDate}" />
+
+
+            <Label Text="Wybierz godzinę:" FontAttributes="Bold"/>
+            <TimePicker x:Name="VisitTimePicker"
+                    Time="09:00" />
+
+
+            <Button Text="Zarezerwuj wizytę"
+                    Clicked="OnReserveClicked"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
