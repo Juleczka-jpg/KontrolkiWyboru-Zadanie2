@@ -25,6 +25,14 @@ namespace MauiApp7
 
             BindingContext = this;
         }
+*******************************************************************
+nazwa funkcji: OnReserveClicked
+opis funkcji: funkcja rezewuje wizytę po kliknięciu w przycisk
+parametry: var specialization, var date, var time
+zwracany typ i opis: funkcja zwraca alerty - błąd, gdy nie wybrano żadnej specjalizacji; potwierdzenie, jeśli wybrano specjalizację.
+autor: Julia Nowakowska
+*******************************************************************
+
         private async void OnReserveClicked(object sender, EventArgs e)
         {
             if (SpecializationPicker.SelectedItem == null)
