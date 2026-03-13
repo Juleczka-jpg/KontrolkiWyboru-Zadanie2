@@ -27,9 +27,9 @@ namespace MauiApp7
         }
 *******************************************************************
 nazwa funkcji: OnReserveClicked
-opis funkcji: funkcja rezewuje wizytę po kliknięciu w przycisk
-parametry: var specialization, var date, var time
-zwracany typ i opis: funkcja zwraca alerty - błąd, gdy nie wybrano żadnej specjalizacji; potwierdzenie, jeśli wybrano specjalizację.
+opis funkcji: Funkcja rezewuje wizytę po kliknięciu w przycisk. Sprawdza, czy wybrano specjalizację i wyświetla odpowiedni alert.
+parametry: sender – obiekt wywołujący zdarzenie, e – argumenty zdarzenia
+zwracany typ i opis: brak(void) – funkcja wyświetla alert z błędem lub potwierdzeniem
 autor: Julia Nowakowska
 *******************************************************************
 
